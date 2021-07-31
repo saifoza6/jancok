@@ -3,11 +3,11 @@
 echo -e "                                                   "| lolcat
 echo -e "[*][*][*]======================================[*][*][*]"| lolcat
 echo -e "                                                  "| lolcat
-echo -e "            AutoScript by VPNinjector.com"| lolcat
+echo -e "            AutoScript by Mas Foza"| lolcat
 echo -e "                                                   "| lolcat
 echo -e "            [1] Create Account Vmess"| lolcat
-echo -e "            [2] Create Account Vless"| lolcat
-echo -e "            [3] Create Account Trojan"| lolcat
+echo -e "            [2] Create Account SSH"| lolcat
+echo -e "            [3] Change Port V2ray"| lolcat
 echo -e "            [4] More Options"| lolcat
 echo -e "            [x] menu"| lolcat
 echo -e "                                                   "| lolcat
@@ -20,10 +20,10 @@ case $vvt in
 add-ws
 ;;
 2)
-add-vless
+usernew
 ;;
 3)
-add-tr
+port-ws
 ;;
 4)
 options
