@@ -29,7 +29,7 @@ wget -O /root/.bashrc https://raw.githubusercontent.com/emue25/cream/mei/.bashrc
 #install cf
 wget https://raw.githubusercontent.com/saifoza6/jancok/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/saifoza6/jancok/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+#wget https://raw.githubusercontent.com/saifoza6/jancok/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #wget https://raw.githubusercontent.com/saifoza6/jancok/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 #wget https://raw.githubusercontent.com/saifoza6/jancok/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
