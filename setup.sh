@@ -30,16 +30,16 @@ wget -O /root/.bashrc https://raw.githubusercontent.com/emue25/cream/mei/.bashrc
 wget https://raw.githubusercontent.com/saifoza6/jancok/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/saifoza6/jancok/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/saifoza6/jancok/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+#wget https://raw.githubusercontent.com/saifoza6/jancok/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/saifoza6/jancok/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/saifoza6/jancok/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+#wget https://raw.githubusercontent.com/saifoza6/jancok/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+#wget https://raw.githubusercontent.com/saifoza6/jancok/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
 wget https://raw.githubusercontent.com/saifoza6/jancok/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
 wget https://raw.githubusercontent.com/saifoza6/jancok/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/saifoza6/jancok/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+#wget https://raw.githubusercontent.com/saifoza6/jancok/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 #wget https://raw.githubusercontent.com/saifoza6/jancok/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # set time GMT +8
 ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
@@ -67,7 +67,7 @@ rm -f /root/set-br.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=https://vpninjector.com
+Documentation=https://foza.ml
 
 [Service]
 Type=oneshot
