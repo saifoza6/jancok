@@ -2,16 +2,6 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
-echo "Checking VPS"
-IZIN=$( curl http://34.101.77.252:6969/server/ipvps | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${green}Permission Accepted...${NC}"
-else
-echo -e "${red}Permission Denied!${NC}";
-echo "Only For Premium Users"
-exit 0
-fi
 clear
 source /var/lib/premium-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
@@ -47,7 +37,7 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "id": "${uuid}",
       "aid": "64",
       "net": "ws",
-      "path": "/vpninjector",
+      "path": "/saifoza",
       "type": "none",
       "host": "",
       "tls": "tls"
@@ -62,7 +52,7 @@ cat>/etc/v2ray/$user-none.json<<EOF
       "id": "${uuid}",
       "aid": "64",
       "net": "ws",
-      "path": "/vpninjector",
+      "path": "/saifoza",
       "type": "none",
       "host": "",
       "tls": "none"
@@ -86,7 +76,7 @@ echo -e "id             : ${uuid}"
 echo -e "alterId        : 64"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path           : /vpninjector"
+echo -e "path           : /saifoza"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
