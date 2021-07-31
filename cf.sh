@@ -3,11 +3,11 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 apt install jq curl -y
-DOMAIN=vpninjector.com
+DOMAIN=foza.ml
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.vpninjector.com
-CF_ID=baxiamania@gmail.com
-CF_KEY=e790e6961a311853568fbccd227e043533482
+SUB_DOMAIN=${sub}.foza.ml
+CF_ID=saifoza23@gmail.com
+CF_KEY=a6aeb521888d9c9f6f5cc50781c224ddb04ea
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
